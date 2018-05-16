@@ -1,0 +1,16 @@
+{% extends "social/base.html" %}
+
+{% block title %}Login Page{% endblock %}
+
+{% block content %}
+<form action="#" method="POST">
+	{{ form.error }}
+	{{ form.errors }}
+	{{ form.as_p }}
+	{% csrf_token %}
+	{% if error %}
+	<p style="color:red">{{ error }}</p>
+	{% endif %}
+	<button type="submit">SUBMIT</button>
+</form>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="header-content">
+        <div class="title">Bookmarks</div>
+        {% if request.user.is_authenticated %}
+        <div class="menu">
+	        <a href="#" class="{% if section == 'dashboard' %}selected {% endif %}menu-items">My Dashboard</a>
+	        <a href="#" class="{% if section == 'images' %}selected {% endif %}menu-items">Images</a>
+	        <a href="#" class="{% if section == 'people' %}selected {% endif %}menu-items">People</a>
+        </div>
+        <div class="login"><span>Hello, Logout</span></div>
+        {% endif %}
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="center-container">
+    	{% block content %}
+    	{% endblock %}
+    </div>
+  </body>
+</html>

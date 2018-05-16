@@ -1,0 +1,67 @@
+@font-face {
+   font-family: OpenSans-Light;
+   src: url(OpenSans-Light.ttf);
+}
+body{
+  padding: 0px;
+  margin: 0px;
+}
+.header-container{
+  width : 100%;
+  margin : 0px auto;
+  background-color: #733fd7;
+  border : 1px solid black;
+  border-bottom: 5px solid #302384;
+  font-family: OpenSans-Light;
+}
+.header-content{
+  width : 82%;
+  margin : 0px auto 0px auto;
+}
+.title{
+  width : 25%;
+  color: #f6f0ff;
+  margin-top: 25px;
+  float: left;
+  font-size: 42px;
+}
+.menu{
+  width : 45%;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  float:left;
+  font-family: OpenSans-Light;
+}
+.menu-items{
+  height: 40px;
+  margin-top: 18px;
+  margin-right: 55px;
+  color: #f6f0ff;
+  float:left;
+  font-size: 21px;
+}
+.selected{
+  color: #1c0c4e; 
+}
+a{
+    color: #f6f0ff;
+    text-decoration: none;
+}
+.login{
+  /*width : 10%;*/
+  font-size: 21px;
+  padding-top: 15px;
+  color: #f6f0ff;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  float:right;
+}
+.center-container{
+  width : 82%;
+  height : 500px;
+  margin : 0px auto;
+  border : 1px solid black;
+}
+.clear{
+  clear: both;
+}
